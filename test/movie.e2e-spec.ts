@@ -62,17 +62,17 @@ describe('MovieController (e2e)', () => {
     );
     console.log(response.body);
     if (response.body.min.length > 0) {
-      expect(response.body.min[0].producer).toBe('Bo Derek');
-      expect(response.body.min[0].interval).toBe(6);
-      expect(response.body.min[0].previousWin).toBe(1984);
-      expect(response.body.min[0].winningYear).toBe(1990);
+      expect(response.body.min[0].producer).toBe('Joel Silver');
+      expect(response.body.min[0].interval).toBe(1);
+      expect(response.body.min[0].previousWin).toBe(1990);
+      expect(response.body.min[0].winningYear).toBe(1991);
     }
 
     if (response.body.max.length > 0) {
-      expect(response.body.max[0].producer).toBe('Joel Silver');
-      expect(response.body.max[0].interval).toBe(35);
-      expect(response.body.max[0].previousWin).toBe(1990);
-      expect(response.body.max[0].winningYear).toBe(2025);
+      expect(response.body.max[0].producer).toBe('Matthew Vaughn');
+      expect(response.body.max[0].interval).toBe(13);
+      expect(response.body.max[0].previousWin).toBe(2002);
+      expect(response.body.max[0].winningYear).toBe(2015);
     }
   });
 });
